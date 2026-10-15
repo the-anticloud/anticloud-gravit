@@ -1,33 +1,16 @@
 # GRAVIT
 
-> Anticloud offline package — upstream: OliBridgman/gravit @ `master`.
+> Gravit is a design tool for Mac, Windows, Linux, ChromeOS and the Browser made in the spirit for Freehand and Fireworks. It is completely written in HTML5, Javascript and CSS3. Gravit consists of the core engine called "Infinity", the actual Application and the core Module called "Gravit".
 
-## What This Project Does
+**Category:** DESIGN_TOOLS · **Ecosystem:** unknown · **Vendored upstream:** https://github.com/OliBridgman/gravit · **Pinned commit:** `2105bdbdd483e592c30116acedb4c50efaa52f06` · **Vendor:** Anticloud FZ LLE
 
-Gravit - The versatile Design Tool for Windows, Mac, Chrome OS and the Browser
+## What This Project Is
 
-## Upstream README
+Gravit is a design tool for Mac, Windows, Linux, ChromeOS and the Browser made in the spirit for Freehand and Fireworks. It is completely written in HTML5, Javascript and CSS3. Gravit consists of the core engine called "Infinity", the actual Application and the core Module called "Gravit".
 
-## Introduction
+This is the upstream project, vendored at the pinned commit above and packaged offline-first. The 12 improvements Anticloud adds live in `anticloud/` and are described under *Anticloud Overlay* below. Every fact in this file traces to a file in this directory.
 
-Gravit is a design tool for Mac, Windows, Linux, ChromeOS and the Browser made
-in the spirit for Freehand and Fireworks. It is completely written in HTML5,
-Javascript and CSS3. Gravit consists of the core engine called "Infinity", the
-actual Application and the core Module called "Gravit".
-
-We'd like to encourage everyone in getting involved with this project. You can
-develop new features or take a ticket and fix it. Or if you're a UX/Designer, you
-could help designing new icons or improving the UI. To get started contributing,
-read the [GitHub Guide](https://guides.github.com/activities/contributing-to-open-source/)
-
-## Prerequisites
-
-* NodeJS + NPM
-* Grunt Client
-* Bower
-* SASS + Compass
-
-## Quick Start
+## Installation
 
 Install all prerequisites and make sure they're available on your path.
 
@@ -40,35 +23,32 @@ webbrowser at http://127.0.0.1:8999/.
 We recommend using Chrome as this is the browser also used for the standalone
 version.
 
-## Quick Overview
+## Usage
 
-+ assets - contains all relevant assets like fonts, images, etc.
-+ shell - contains platform-specific code for standalone version
-+ src - contains all source code
-  + application - contains the application framework
-  + development - contains the development addon automatically loaded when developing
-  + gravit - contains the core module that is loaded by the application and provides all UI of Gravit
-  + infinity - contains the core rendering engine as well as core classes used everywhere else
-  + infinity-editor - contains editors, tools, guides and more based on infinity
-+ style - contains all styling files for the application
-+ test - contains all test files
+See the upstream README (linked above) for usage. The Anticloud packaging adds a local entrypoint described in `anticloud/` and the tutorials under `11_TUTORIAL_DEVELOPERS/`, `12_TUTORIAL_ENTERPRISE/` and `13_TUTORIAL_USERS/`.
 
-## Community
+## Anticloud Overlay
 
-Issues are being tracked here on GitHub.
+The 12 improvements live under `anticloud/`. Run the check suite from this directory:
 
-## License
+```
+python anticloud/bench/runner.py --cwd anticloud
+```
 
-`Gravit`'s code in this repo uses the GPL license, see our `LICENSE` file for detailed information.
-The name Gravit and the Gravit Logo as well as all related logos are exclusive trademarks of
-Quasado GmbH, Quasado e.K. and may not be used without prior written permission.
+## Benchmark Results
 
-`Gravit`'s code is also available as a commercial license. For more information, contact us.
+The suite is recorded in `BENCH.json`; no benchmark rows were found in this package.
 
-## License
+## Licence
 
-Upstream terms preserved in `THIRD_PARTY_LICENSES/`. Overlay licensed under Anticommons 0.1.0.
+The upstream licence is preserved in `LICENSE` and `THIRD_PARTY_LICENSES/`. The Anticloud overlay is licensed under Anticommons 0.1.0 (`ANTICOMMONS_LICENSE.md`).
 
 ## Verification
 
-Recompute the SHA3-256 of `BENCH.json` and compare to this package’s register. Any drift = invalid package.
+SHA3-256 of `BENCH.json`:
+
+```
+99cf20ed094724c378eb5ac75bdc88995d5174f605a13e28ad15733ef6ba6641
+```
+
+Recompute the hash above and compare — any drift means the package has been tampered with and the seal is invalid. This is a self-assessment; no external audit has been performed and a SOC 2 / NIST independent audit is committed post-funding.

@@ -2,13 +2,11 @@
  "schema": "anticloud.tier-bench/1",
  "project": "GRAVIT",
  "source": {
-  "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\DESIGN_TOOLS\\GRAVIT\\UPSTREAM",
   "git": {
-   "head": "01a438a9ca90041641fa50b01edad407cc022d2e",
-   "url": "https://github.com/rubensousa/GravitySnapHelper",
-   "branch": "master",
-   "committed_at": "2026-09-29T11:06:59+04:00",
-   "sha_verified_from": "GitHub API commits/master"
+   "url": "https://github.com/OliBridgman/gravit",
+   "head": "2105bdbdd483e592c30116acedb4c50efaa52f06",
+   "sha_verified_from": "revendor 2026-10-15: GitHub API commit lookup",
+   "previous_substitute": "https://github.com/rubensousa/GravitySnapHelper"
   }
  },
  "metrics": {
