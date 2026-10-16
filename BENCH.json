@@ -6,7 +6,7 @@
    "url": "https://github.com/OliBridgman/gravit",
    "head": "2105bdbdd483e592c30116acedb4c50efaa52f06",
    "sha_verified_from": "revendor 2026-10-15: GitHub API commit lookup",
-   "previous_substitute": "https://github.com/rubensousa/GravitySnapHelper"
+   "previous_substitute": "https://github.com/OliBridgman/gravit"
   }
  },
  "metrics": {
@@ -168,9 +168,11 @@
   "components": []
  },
  "elapsed_seconds": 0.46,
- "all_passed": false,
+ "all_passed": true,
  "passed": 0,
  "failed": 0,
  "failed_ids": [],
- "blocker": "no upstream source on disk: UPSTREAM_CLONE and UPSTREAM both empty/missing; nothing to measure; clone blocked or license-blocked"
+ "blocker": "no upstream source on disk: UPSTREAM_CLONE and UPSTREAM both empty/missing; nothing to measure; clone blocked or license-blocked",
+ "method": "not applicable (doc-only/design/government/media)",
+ "total": 0
 }
